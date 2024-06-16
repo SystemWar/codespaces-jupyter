@@ -1,0 +1,38 @@
+{
+  "name": "rust",
+  "version": "1.0.8-nightly",
+  "description": "Install the rust toolchain using npm",
+  "repository": "https://github.com/NicholasLYang/npm-install-rust",
+  "license": "MIT",
+  "author": "Nicholas Yang <nick@nicholasyang.com>",
+  "files": [
+    "install.mjs",
+    "LICENSE",
+    "README.md",
+    "binary.mjs"
+  ],
+  "scripts": {
+    "postinstall": "node install.mjs",
+    "fmt": "prettier --write **/*.js",
+    "fmt:check": "prettier --check **/*.js"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
+  "volta": {
+    "node": "18.14.1",
+    "npm": "9.5.0"
+  },
+  "dependencies": {
+    "axios-proxy-builder": "^0.1.1",
+    "binary-install": "^1.0.6",
+    "command-exists": "^1.2.9",
+    "console.table": "^0.10.0",
+    "detect-libc": "^2.0.0",
+    "zx": "^7.2.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
+}
