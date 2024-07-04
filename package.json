@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "rust": "^1.0.8-nightly",
+    "sqlmap": "^0.1.7"
+  }
+}
